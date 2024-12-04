@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LayoutService } from '../layout.service';
 
 @Component({
   selector: 'app-main',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class MainLayoutComponent {
 
+    constructor(public layoutServ: LayoutService){}
 }

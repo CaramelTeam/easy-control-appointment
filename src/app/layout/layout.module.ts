@@ -5,18 +5,28 @@ import { RouterModule } from '@angular/router'; // Importa RouterModule
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { MainLayoutComponent } from './MainLayout/main.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
+//#region ================= Prime ng ===============
+import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+import { DockModule } from 'primeng/dock';
+//#endregion
 
 @NgModule({
   declarations: [
     LoginComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    NavBarComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ButtonModule,
+    SidebarModule,
+    DockModule
   ],
   exports: [MainLayoutComponent]
 })
