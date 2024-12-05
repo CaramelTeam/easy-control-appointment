@@ -12,13 +12,16 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DockModule } from 'primeng/dock';
+import { MenuSliderComponent } from './menu-slider/menu-slider.component';
+import { MenuModule } from 'primeng/menu';
 //#endregion
 
 @NgModule({
   declarations: [
     LoginComponent,
     MainLayoutComponent,
-    NavBarComponent
+    NavBarComponent,
+    MenuSliderComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +29,8 @@ import { DockModule } from 'primeng/dock';
     RouterModule,
     ButtonModule,
     SidebarModule,
-    DockModule
+    DockModule,
+    MenuModule
   ],
   exports: [MainLayoutComponent]
 })

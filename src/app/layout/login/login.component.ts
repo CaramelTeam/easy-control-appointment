@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  constructor(private router: Router) {}
 
     user: string = '';
     password: string = ''
@@ -14,5 +16,6 @@ export class LoginComponent {
     saveData(){
       console.log(this.user + ' ' + this.password);
       localStorage.setItem('token', this.user);
+      this.router.navigate([''])
     }
 }

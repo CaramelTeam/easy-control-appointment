@@ -14,8 +14,12 @@ const routes: Routes = [
     path: '', component: MainLayoutComponent, canActivate: [authGuard],
     children: [
       {
-        path: 'home',
+        path: '',
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule)
       }
     ]
   },
