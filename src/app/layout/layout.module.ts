@@ -14,6 +14,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { DockModule } from 'primeng/dock';
 import { MenuSliderComponent } from './menu-slider/menu-slider.component';
 import { MenuModule } from 'primeng/menu';
+import { PasswordModule } from 'primeng/password';
+import { InputTextModule } from 'primeng/inputtext';
 //#endregion
 
 @NgModule({
@@ -30,7 +32,9 @@ import { MenuModule } from 'primeng/menu';
     ButtonModule,
     SidebarModule,
     DockModule,
-    MenuModule
+    MenuModule,
+    PasswordModule,
+    InputTextModule
   ],
   exports: [MainLayoutComponent]
 })

@@ -1,6 +1,18 @@
+<div class="login-Data">
+  <div class="form-login">
+    <div class="card flex justify-content-center">
+      <span class="p-float-label">
+        <input pInputText id="username" [(ngModel)]="user" />
+        <label htmlFor="username">Username</label>
+      </span>
+    </div>
 
-<input type="text" [(ngModel)]="user">
-<input type="text" [(ngModel)]="password">
+    <div class="card flex justify-content-center">
+      <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+    </div>
 
-
-<button (click)="saveData()" pButton> Save </button>
+    <div>
+      <button pButton label="Log in"></button>
+    </div>
+  </div>
+</div>
