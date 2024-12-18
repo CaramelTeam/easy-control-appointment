@@ -1,0 +1,14 @@
+<full-calendar [options]="calendarOptions" (click)="addEvent()">
+  <ng-template #eventContent let-arg>
+    <b>{{arg.timeText}}</b>
+    <i>{{arg.event.title}}</i>
+  </ng-template>
+</full-calendar>
+
+
+
+<p-dialog header="Header" [(visible)]="viewAddItem"  [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+    <p>
+      Aqui el form para el llenado de citas
+    </p>
+</p-dialog>
