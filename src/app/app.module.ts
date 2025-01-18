@@ -9,10 +9,12 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 
 
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
